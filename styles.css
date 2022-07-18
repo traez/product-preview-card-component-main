@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@700&display=swap');
+
+/*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+- Font size (paragraph): 14px
+*/
+
+:root {
+--dark-cyan: hsl(158, 36%, 37%);
+--cream: hsl(30, 38%, 92%);
+--very-dark-blue: hsl(212, 21%, 14%);
+--dark-grayish-blue: hsl(228, 12%, 48%);
+--white: hsl(0, 0%, 100%);
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+   background-color: var(--cream);
+    }
+
+main{
+    border-radius:1rem;
+    max-width: 600px;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:center;
+    align-content:center;
+    height: calc(100vh - 1px);
+}
+
+.wordings{
+    background-color: var(--white);
+    border-radius:1rem;
+    padding:2rem;
+    max-height: 100%;
+}
+
+.pix {
+    max-width: 100%;
+    height: auto;
+    border-radius:1rem;
+  }
+
+h1.fraunces{
+    font-size: 28px;
+    font-weight:bold;
+}
+
+.montserrat{
+    font-family: Montserrat, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.montserrat#capital{
+    font-family: Montserrat, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+}
+
+#floral {
+    color: var(--dark-grayish-blue);
+    font-size: 12px;
+}
+
+.fraunces{
+    font-family: Fraunces, sans-serif;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+#big-line {
+    font-size: 26px;
+    color: var(--dark-cyan);
+
+}
+
+#line-through {
+    text-decoration: line-through;
+    margin-left: 5%;
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+}
+
+button {
+    background-color: hsl(158, 36%, 17%);
+    color: var(--white);
+    border-radius:0.5rem;
+    border: 0;
+    padding:1rem 3rem;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 481px) {
+    main {width: 500px;}
+  }
