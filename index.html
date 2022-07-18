@@ -8,43 +8,36 @@
   <title>Frontend Mentor (@traez)| Product preview card component</title>
 </head>
   <!-- 
-         <picture>
-          <source class="pix" media="(min-width: 640px)" srcset="./images/image-product-desktop.jpg"/>
-          <img class="pix" src="./images/image-product-mobile.jpg" alt="" />
-        </picture>
+Basic concept is 2 containers, which would be structured using flex-box.
+Tried to make elements as semantic as possible in naming.
   -->
 <body>
-<main>
-  <section>
-  <picture>
-    <source class="pix" media="(min-width:481px)" srcset="./images/image-product-desktop.jpg"/>
-    <img class="pix" src="./images/image-product-mobile.jpg" alt="picture mobile"/>
-  </picture>
-</section>
-<section class="wordings">
-  <p class="montserrat" id="capital">Perfume</p>
+ <main>
+    <section class="left"></section>
+    <section class="right">
+      <p class="montserrat" id="capital">Perfume</p>
 
-  <h1 class="fraunces">Gabrielle Essence Eau De Parfum</h1>
+      <h1 class="fraunces">Gabrielle Essence Eau De Parfum</h1>
 
-  <p class="montserrat" id="floral">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.</p>
+      <p class="montserrat" id="floral">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
 
-  <p class="fraunces">
-  <span id="big-line">$149.99</span>
-  <span id="line-through">$169.99</span>
-  </p>
+      <p class="fraunces prices">
+      <span id="big-line">$149.99</span>
+      <span id="line-through">$169.99</span>
+      </p>
 
- <p class="montserrat">
-  <button type="button">
-    <img src="images/icon-cart.svg" alt="icon cart">
-    Add to Cart
-  </button>
- </p>
- <footer class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="https://github.com/traez">Trae Zeeofor</a>.
-</footer>
-</section>
-</main>
+      <p class="montserrat">
+      <button type="button">
+      <img src="images/icon-cart.svg" alt="icon cart">
+      Add to Cart
+      </button>
+      </p>
+      <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/traez">Trae Zeeofor</a>.
+      </footer>
+     </section>
+ </main>
 </body>
 </html>
